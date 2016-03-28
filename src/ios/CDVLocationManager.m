@@ -1045,7 +1045,7 @@
     [dict setObject:accuracy forKey:@"accuracy"];
 
     // distance calculation
-    NSString* distance = [NSNumber numberWithInteger:proximity];
+    NSNumber* distance = [NSNumber numberWithInteger:proximity];
     [dict setObject:distance forKey:@"distance"];
     
     return dict;
