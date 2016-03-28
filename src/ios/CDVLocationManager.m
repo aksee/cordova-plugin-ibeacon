@@ -1043,6 +1043,10 @@
     // accuracy is a rough estimate of distance in metres. capped to two decimal places
     NSNumber *accuracy = [NSNumber numberWithDouble:round(100*beacon.accuracy)/100];
     [dict setObject:accuracy forKey:@"accuracy"];
+
+    // distance calculation
+    NSString* distance = [NSNumber numberWithInteger:proximity];
+    [dict setObject:distance forKey:@"distance"];
     
     return dict;
 }
